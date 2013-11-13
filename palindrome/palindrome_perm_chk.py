@@ -29,7 +29,26 @@ arg = arg.replace(" ", "")
 print "string w/o whitespace"
 print arg
 
+print "convert to lowercase"
+arg = arg.lower()
+print arg
+
 # Deal with short-circuits first
 # If odd
-# If >1 letter which occurs an odd number of times
+#    If >1 letter which occurs an odd number of times - die, ret false
+# If even
+#    If >0 letter occurs an odd number of times - die, ret false
+# else ret true
 
+print "length of string"
+print len(arg)	
+
+if ( len(arg)%2 ) != 0:
+	print "string length is odd!!"
+else:
+	print "string length is even!!"
+
+
+print "list individual characters within string"
+charset = set(arg)
+print charset
